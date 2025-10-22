@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Glassmorphism Overlay</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    html, body {
+      height: 100%;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      min-height: 100vh;
+      min-width: 100vw;
+      height: 100vh;
+      width: 100vw;
+      background: transparent;
+      display: flex;
+      justify-content: flex-start;
+      align-items: flex-start;
+      font-family: Arial, sans-serif;
+    }
+
+    .glass-container {
+      width: 100vw;
+      height: 100vh;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .glass-box {
+      background: rgba(42, 53, 46, 0.147);
+      backdrop-filter: blur(15px);
+      -webkit-backdrop-filter: blur(15px);
+      width: 100vw;
+      height: 100vh;
+      border-radius: 15;
+    }
+  </style>
+</head>
+<body>
+  <div class="glass-container">
+    <div class="glass-box"></div>
+  </div>
+</body>
+</html>
